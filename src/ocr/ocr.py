@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from PIL import Image
 import re
 import string
@@ -7,8 +9,9 @@ import pytesseract
 
 
 def check_valid(text):
+    '''检查识别的字符是否有效，如果有效则返回识别字符，无效则返回None'''
     def extract_valid_chars(text):
-        '''extract valid chars, like 1 0 a b, $#^) will be dismissed'''
+        '''提取有效字符，像￥……*#￥之类的字符将被忽略'''
         text = text.lower()
         valid_chars = string.digits + string.ascii_lowercase
         for c in text:
@@ -22,7 +25,7 @@ def check_valid(text):
     code = extract_valid_chars(text)
     is_valid = regex.match(code)
 
-    # if is_valid is False, means we get a wrong code
+    # 如果is_valid是False 的话，代表我们获取的验证码并不符合要求，因此返回None
     if is_valid:
         return code
     else:
@@ -39,7 +42,7 @@ def ocr_with_baidu(f_name):
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "apikey": 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-        # replace xxxx with your own apikey
+        # 在这里填写你自己的apikey
     }
     req = requests.post(url, data, headers=headers)
     resp = req.json()
@@ -51,8 +54,8 @@ def ocr_with_baidu(f_name):
 
 def ocr(f_name):
     im = Image.open(f_name)
-    # Binarization
     im = im.convert('L')
+    # 先将图像二值化处理，有助于提升识别效果。
     text = pytesseract.image_to_string(im)
     return check_valid(text)
 

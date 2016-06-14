@@ -1,4 +1,5 @@
-# crack_thunder.py
+# -*- coding: utf-8 -*-
+
 import base64
 
 TEST_URL = 'thunder://QUFodHRwOi8vZGxkaXIxLnFxLmNvbS9xcWZpbGUvcXEvUVE4LjMvMTgwMzgvUVE4LjMuZXhlWlo='
