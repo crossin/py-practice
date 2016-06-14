@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
 import os
 import random
+import subprocess
 
 VIDEO_EXT = ['avi', 'mkv', 'mp4', 'wmv']
 # 视频文件的扩展名，这里只列出了常见的几种格式
@@ -33,10 +35,11 @@ if __name__ == '__main__':
 
     # print(all_videos)
 
-    for i in range(random.randint(0, 5)):
+    for i in range(random.randint(1, 5)):
         video = random.choice(all_videos)
         # 据说多随机选几次，得到的结果更随机？//哈哈其实完全是心理作用
 
     # print(video)
-    os.startfile(video)
+    os.startfile(video)  # Windows
     # 调用系统默认播放器播放视频，注意不要使用 `os.system`
+    # subprocess.call(['open', video])  # Mac / Linux
