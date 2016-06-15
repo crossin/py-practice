@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
     # print(all_videos)
 
-    for i in range(random.randint(1, 5)):
+    for i in range(5):
         video = random.choice(all_videos)
         # 据说多随机选几次，得到的结果更随机？//哈哈其实完全是心理作用
 
