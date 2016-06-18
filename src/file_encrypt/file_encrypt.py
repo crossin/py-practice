@@ -45,7 +45,14 @@ def decrypt(file_name, password):
             chunk, next_chunk = next_chunk, cipher.decrypt(in_file.read(1024 * bs))
             # 前面加密时补充的数据在这里就有用了。
             if len(next_chunk) == 0:
-                padding_length = chunk[-1]
+                try:
+                    padding_length = ord(chunk[-1])
+                except:
+                    padding_length = chunk[-1]
+                ''' 在python3中，我们不要使用ord函数，
+                    这里采用了非常粗暴的解决方式来兼容Python2/3，
+                    你能想到更好的解决方案么？
+                '''
                 chunk = chunk[:-padding_length]
                 flag = False
             out_file.write(chunk)
