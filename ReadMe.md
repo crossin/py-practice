@@ -12,5 +12,6 @@
 |  19  | [人脸打分](src/face_rating/description.md)   | [face_rating.py](src/face_rating/face_rating.py) |      |
 |  20  | [文件加密](src/file_encrypt/description.md)  | [file_encrypt.py](src/file_encrypt/file_encrypt.py) |      |
 |  21  | [单词统计](src/wordcount/description.md)     | [wordcount.py](src/wordcount/wordcount.py) |      |
+|  22  | [学习NumPy](src/learn_numpy/description.md) | [learn_numpy.py](src/learn_numpy/learn_numpy.py) |      |
 |      |                                          |                                          |      |
 
