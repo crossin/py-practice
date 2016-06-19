@@ -14,5 +14,8 @@
 |  21  | [单词统计](src/wordcount/description.md)     | [wordcount.py](src/wordcount/wordcount.py) |      |
 |  22  | [学习NumPy](src/learn_numpy/description.md) | [learn_numpy.py](src/learn_numpy/learn_numpy.py) |      |
 |  23  | [随机点餐](src/nuomi/description.md)         | [nuomi.py](src/nuomi/nuomi.py)           |      |
+|  24  | [随机生成单词](src/markov/description.md)      | [markov.py](src/markov/markov.py)        |      |
+|  25  | [文件压缩/解压](src/compress/description.md)   | [compress.py](src/compress/compress.py)  |      |
+|  26  | [Python机器学习](src/py_ml/description.md)   | [py_ml.py](src/py_ml/py_ml.py)           |      |
 |      |                                          |                                          |      |
 
