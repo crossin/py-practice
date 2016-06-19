@@ -13,5 +13,6 @@
 |  20  | [文件加密](src/file_encrypt/description.md)  | [file_encrypt.py](src/file_encrypt/file_encrypt.py) |      |
 |  21  | [单词统计](src/wordcount/description.md)     | [wordcount.py](src/wordcount/wordcount.py) |      |
 |  22  | [学习NumPy](src/learn_numpy/description.md) | [learn_numpy.py](src/learn_numpy/learn_numpy.py) |      |
+|  23  | [随机点餐](src/nuomi/description.md)         | [nuomi.py](src/nuomi/nuomi.py)           |      |
 |      |                                          |                                          |      |
 
