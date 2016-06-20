@@ -18,5 +18,6 @@
 |  25  | [文件压缩/解压](src/compress/description.md)   | [compress.py](src/compress/compress.py)  |      |
 |  26  | [Python机器学习](src/py_ml/description.md)   | [py_ml.py](src/py_ml/py_ml.py)           |      |
 |  27  | [图像处理](src/dip/description.md)           | [dip.py](src/dip/dip.py)                 |      |
+|  28  | [迭代器](src/iterator/description.md)       | [iterator.py](src/iterator/iterator.py)  |      |
 |      |                                          |                                          |      |
 
