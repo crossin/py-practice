@@ -23,5 +23,7 @@
 |  30  | [生成二维码](src/qr_encoder/description.md)   | [qr_encoder.py](src/qr_encoder/qr_encoder.py) |      |
 |  31  | [函数式编程](src/fp/description.md)           | [fp.py](src/fp/fp.py)                    |      |
 |  32  | [绘制图表](src/plotting/description.md)      | [plotting.py](src/plotting/plotting.py)  |      |
+|  33  | [正则表达式](src/regex/description.md)        | [regex.py](src/regex/regex.py)           |      |
+|  34  | [网页解析](src/html_parser/description.md)   | [html_parser.py](src/html_parser/html_parser.py) |      |
 |      |                                          |                                          |      |
 
