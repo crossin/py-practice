@@ -20,5 +20,6 @@
 |  27  | [图像处理](src/dip/description.md)           | [dip.py](src/dip/dip.py)                 |      |
 |  28  | [迭代器](src/iterator/description.md)       | [iterator.py](src/iterator/iterator.py)  |      |
 |  29  | [生成器](src/generator/description.md)      | [generator.py](src/generator/generator.py) |      |
+|  30  | [生成二维码](src/qr_encoder/description.md)   | [qr_encoder.py](src/qr_encoder/qr_encoder.py) |      |
 |      |                                          |                                          |      |
 
