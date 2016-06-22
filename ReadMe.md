@@ -21,5 +21,6 @@
 |  28  | [迭代器](src/iterator/description.md)       | [iterator.py](src/iterator/iterator.py)  |      |
 |  29  | [生成器](src/generator/description.md)      | [generator.py](src/generator/generator.py) |      |
 |  30  | [生成二维码](src/qr_encoder/description.md)   | [qr_encoder.py](src/qr_encoder/qr_encoder.py) |      |
+|  31  | [函数式编程](src/fp/description.py)           | [fp.py](src/fp/fp.py)                    |      |
 |      |                                          |                                          |      |
 
