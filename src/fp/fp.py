@@ -13,7 +13,7 @@ except:
 
 def read_file(file_name):
     '''读取文件，并返回点列表'''
-    num_list = []
+    vector_list = []
     with open(file_name) as f_in:
         # 试试用map来替代这个循环？
         for line in f_in:
@@ -25,13 +25,13 @@ def read_file(file_name):
                 map(f, ...)
                 两者完全等价
             '''
-            num_list.append((x_r, y_r))
+            vector_list.append((x_r, y_r))
 
-    return num_list
+    return vector_list
 
 
-def get_sorted_list(num_list):
-    filted_points = filter(lambda p: p[0]**2 + p[1]**2 < 1, num_list)
+def get_sorted_list(vector_list):
+    filted_points = filter(lambda p: p[0]**2 + p[1]**2 < 1, vector_list)
     # 此处使用filter函数，只保留长度小于1的向量。
     return sorted(filted_points, key=lambda p: p[0]**2 + p[1]**2, reverse=True)
     # 同样的道理，这里应该很好理解了吧？
@@ -42,8 +42,8 @@ def add(a, b):
 
 
 if __name__ == '__main__':
-    num_list = read_file('in.txt')
-    top_10 = get_sorted_list(num_list)[:10]
+    vector_list = read_file('in.txt')
+    top_10 = get_sorted_list(vector_list)[:10]
     print(reduce(lambda x, y: (x[0] + y[0], x[1] + y[1]), top_10))
 
     add_8 = partial(add, b=8)
