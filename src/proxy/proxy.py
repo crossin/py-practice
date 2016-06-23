@@ -11,12 +11,17 @@ TEST_URL = 'http://1212.ip138.com/ic.asp'
 
 
 def get_via_proxy(url, proxy):
-    proxies = {'http': proxy}
     # 使用requests进行代理访问就是这么简单！
-    r = requests.get(url, proxies=proxies)
-
-    return r.content('gbk')
-    # 我们访问的这个网址是gbk编码的
+    proxies = {'http': proxy}
+    try:
+        r = requests.get(url, proxies=proxies)
+        content = r.content.decode('gbk')
+        # 我们访问的这个网址是gbk编码的
+    except:
+        content = None
+    # 我们只采用了非常简单粗暴的异常处理方式，
+    # 但实际上这种方式效果非常好，虽然它会掩盖错误原因。
+    return content
 
 
 def extract_proxies(page_content):
@@ -28,20 +33,12 @@ def extract_proxies(page_content):
 
 
 def test_k_times(url, proxy_list, k=3):
-    proxies = {'http': ''}
-    for i in range(3):
+    for i in range(k):
         # 两重循环的顺序能换一下么？
         for proxy in proxy_list:
-            proxies['http'] = proxy
-            try:
-                r = requests.get(url, proxies=proxies)
-                # 如果不出意外的话，每次将输出我们来自不同的ip
-                print(r.content.decode('gbk'))
-                # 你可以解析一下html页面，只输出我们想要的内容么？
-            except:
-                # 我们只采用了非常简单粗暴的异常处理方式，
-                # 但实际上这种方式效果非常好，虽然它会掩盖错误原因。
-                continue
+            # 如果代理有效的话，每次将输出我们来自不同的ip
+            print(get_via_proxy(url, proxy))
+            # 你可以解析一下html页面，只输出我们想要的内容么？
 
 
 if __name__ == '__main__':
