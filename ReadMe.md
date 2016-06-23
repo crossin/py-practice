@@ -25,5 +25,6 @@
 |  32  | [绘制图表](src/plotting/description.md)      | [plotting.py](src/plotting/plotting.py)  |      |
 |  33  | [正则表达式](src/regex/description.md)        | [regex.py](src/regex/regex.py)           |      |
 |  34  | [网页解析](src/html_parser/description.md)   | [html_parser.py](src/html_parser/html_parser.py) |      |
+|  35  | [网络代理](src/proxy/description.md)         | [proxy.py](src/proxy/proxy.py)           |      |
 |      |                                          |                                          |      |
 
