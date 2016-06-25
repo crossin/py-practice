@@ -27,5 +27,5 @@
 |  34  | [网页解析](src/html_parser/description.md)   | [html_parser.py](src/html_parser/html_parser.py) |      |
 |  35  | [网络代理](src/proxy/description.md)         | [proxy.py](src/proxy/proxy.py)           |      |
 |  36  | [多线程](src/multi_thread/description.md)   | [multi_thread.py](src/multi_thread/multi_thread.py) |      |
-|      |                                          |                                          |      |
+|  37  | [序列化](src/serialization/description.md)  | [serialization.py](src/serialization/serialization.py) |      |
 
