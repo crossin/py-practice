@@ -29,5 +29,6 @@
 |  36  | [多线程](src/multi_thread/description.md)   | [multi_thread.py](src/multi_thread/multi_thread.py) |      |
 |  37  | [序列化](src/serialization/description.md)  | [serialization.py](src/serialization/serialization.py) |      |
 |  38  | [素数判别](src/is_prime/description.md)      | [is_prime.py](src/is_prime/is_prime.py)  |      |
+|  39  | [单元测试](src/unit_test/description.md)     | [unit_test.py](src/unit_test/unit_test.py) |      |
 |      |                                          |                                          |      |
 
