@@ -31,5 +31,6 @@
 |  38  | [素数判别](src/is_prime/description.md)      | [is_prime.py](src/is_prime/is_prime.py)  |      |
 |  39  | [单元测试](src/unit_test/description.md)     | [unit_test.py](src/unit_test/unit_test.py) |      |
 |  40  | [使用搜索引擎](src/web_search/description.md)  | [web_search.py](src/web_search/web_search.py) |      |
+|  41  | [socket编程](src/tcp_socket/description.md) | [tcp_client.py](src/tcp_socket/tcp_client.py)/[tcp_server.py](src/tcp_socket/tcp_server.py) |      |
 |      |                                          |                                          |      |
 
