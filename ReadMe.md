@@ -34,5 +34,6 @@
 |  41  | [socket编程](src/tcp_socket/description.md) | [tcp_client.py](src/tcp_socket/tcp_client.py)/[tcp_server.py](src/tcp_socket/tcp_server.py) |
 |  42  | [Python操作Spark](src/py_spark/description.md) | [py_spark.py](src/py_spark/py_spark.py)  |
 |  43  | [中文分词](src/word_seg/description.md)      | [word_seg.py](src/word_seg/word_seg.py)  |
+|  44  | [定时器](src/py_timer/description.md)       | [py_timer](src/py_timer/py_timer.py)     |
 |      |                                          |                                          |
 
