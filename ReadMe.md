@@ -36,5 +36,6 @@
 |  43  | [中文分词](src/word_seg/description.md)      | [word_seg.py](src/word_seg/word_seg.py)  |
 |  44  | [定时器](src/py_timer/description.md)       | [py_timer](src/py_timer/py_timer.py)     |
 |  45  | [生成验证码](src/gen_identifying_code/description.md) | [gen_identifying_code.py](src/gen_identifying_code/gen_identifying_code.py) |
+|  46  | [打包为可执行文件](src/tcp_socket/description.md) | [test1.py](src/pack/test1.py)/[test2.py](src/pack/test2.py) |
 |      |                                          |                                          |
 
